@@ -1,5 +1,6 @@
 package com.leveraon.java.coding.reverse_polish_notation;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 import lombok.extern.slf4j.Slf4j;
@@ -48,7 +49,7 @@ public class Solution {
 	public static void main(String[] args) {
 		String[] tokens = new String[] { "2", "1", "+", "3", "*" };
 
-		log.info("Given tokens \n {}", tokens);
+		log.info("Given tokens \n {}", Arrays.toString(tokens));
 
 		log.info("Given tokens results \n {}", evalRPN(tokens));
 	}
